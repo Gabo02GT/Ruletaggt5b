@@ -1,0 +1,52 @@
+header {
+    background-color: #632c18;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+.titulo, .boton {
+    text-align: center;
+}
+.escogidos {
+    text-align: center;
+}
+.colores, .numeros .grupo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.colores .btn, .numeros .btn {
+    color: white;
+    margin: 5px;
+}
+
+.ruleta {
+    max-width: 100%;
+    height: auto;
+}
+
+.ruleta.spin8 {
+    animation: rotation 5s cubic-bezier(0.1, 0.7, 1.0, 0.1) forwards;
+}
+
+.resultados {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img, p {
+    margin: 40px;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(1080deg);
+    }
+}
